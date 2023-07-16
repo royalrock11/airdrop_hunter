@@ -6,7 +6,7 @@
 - Javascript (React & Testing)
 - [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
 - [Alchemy](https://www.alchemy.com/) (Blockchain Connection)
-- [Netlify](https://www.netlify.com/) (Cloud Service)
+- [Netlify](https://www.netlify.com/) (Cloud Service) 
 
 ## Requirements For Initial Setup
 - Install [NodeJS](https://nodejs.org/en/). We recommend using the latest LTS (Long-Term-Support) version, and preferably installing NodeJS via [NVM](https://github.com/nvm-sh/nvm#intro).
@@ -48,11 +48,13 @@ Here you can add an environment variable, you'll need to add 9 variables:
 - **PRIVATE_KEY_3=""**
 - **TRANSFER_AMOUNT="10000000"** (10 USDC)
 
-- **TOKEN_ADDRESS="0x07865c6E87B9F70255377e024ace6630C1Eaa37F"** (USDC on Goerli)
-- **WETH_ADDRESS="0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6"** (WETH on Goerli)
+- **TOKEN_ADDRESS="0x07865c6E87B9F70255377e024ace6630C1Eaa37F"** (USDC on Sepolia)
+- **WETH_ADDRESS=""** (WETH on Sepolia)
 
-- **V2_ROUTER_ADDRESS="0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"** (Uniswap V2 Router on Goerli)
+- **V2_ROUTER_ADDRESS="0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"** (Uniswap V2 Router on Sepolia)
 - **SWAP_AMOUNT="25000000000000000"** (0.025 ETH)
+
+##### Reminder- When adding private keys to an out source you run the risk of wallet theft. PLease exercise caution and use this in test environment. 
 
 ### Note
 If you've set the environment variables after deployment has finished you may want to redeploy. Under the **Deploys** tab, you'll see a list of previous deploys done, there should be a drop down titled **Trigger deploy**. Click on the dropdown, and select the **Clear cache and deploy site** to redeploy the site.
